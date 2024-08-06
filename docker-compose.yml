@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq-poc
+#    env_file: ./.env
+    ports:
+      - "5672:5672"
+      - "8089:15672"
+
+
